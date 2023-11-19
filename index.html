@@ -4,8 +4,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="An online collection of popular memes in the Philippines that you can use for your vlogs, comments or any Social media activities, FREE of charge.">
     <title>Pinoy Memes Download</title>
 
 
@@ -39,7 +38,7 @@
       <div class="row">
         <div class="col-sm-8 col-md-7 py-4">
           <h4 class="text-white">About</h4>
-          <p class="text-muted">An online collection of popular Filipino Memes that you can use for your vlogs, comments or any Social media activities, FREE of charge.</p>
+          <p class="text-muted">An online collection of popular memes in the Philippines that you can use for your vlogs, comments or any Social media activities, FREE of charge.</p>
         </div>
         <div class="col-sm-4 offset-md-1 py-4">
           <h4 class="text-white">Contact</h4>
@@ -99,14 +98,19 @@
   $(function(){
     var shtml = '';
     $.each(entries, function( index, entry ) {
+
+        var tags_shtml = '';
+
+        for(i=0;i<entry.tags.length;i++){
+          tags_shtml += '<span class="badge bg-light text-dark">' + entry.tags[i] + '</span>';
+        }
        shtml += `<div class="col">
                     <div class="card shadow-sm">
                         <img class="card-img-top" width="100%" height="225" src="${entry.preview_url}"
                         />
                         <div class="card-body">
                             <p class="card-text">
-                                <span class="badge bg-light text-dark">shocked
-                                </span>
+                                ${tags_shtml}
                             </p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
