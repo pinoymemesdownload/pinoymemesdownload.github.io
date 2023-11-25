@@ -32,12 +32,6 @@ var entries = [
     {        
         "type": "video",
         "preview_url": "/video-placeholder-1280x720-40-768x433.jpg",
-        "download_url": "",
-        "tags" : []
-    },
-    {        
-        "type": "video",
-        "preview_url": "/video-placeholder-1280x720-40-768x433.jpg",
         "download_url": "https://f001.backblazeb2.com/file/pinoymemesdownload/11222023-videos/wait-a-minute-who-are-you.mp4",
         "tags" : ["wait a minute who are you"]
     },
@@ -51,7 +45,7 @@ var entries = [
         "type": "video",
         "preview_url": "/video-placeholder-1280x720-40-768x433.jpg",
         "download_url": "https://f001.backblazeb2.com/file/pinoymemesdownload/11222023-videos/TV-Blackout.mp4",
-        "tags" : ["TB Blackout"]
+        "tags" : ["TV Blackout"]
     },
     {        
         "type": "video",
