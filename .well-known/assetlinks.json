@@ -1,0 +1,14 @@
+[
+    {
+      "relation": [
+        "delegate_permission/common.handle_all_urls"
+      ],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "com.pinoymemesdownload.twa",
+        "sha256_cert_fingerprints": [
+          "D7:18:EC:1A:CE:0C:1F:3E:6D:65:3C:BD:EA:33:29:BA:14:93:BF:15:6E:67:F3:1F:ED:6F:44:BF:18:A7:7D:13"
+        ]
+      }
+    }
+  ]
