@@ -49,7 +49,7 @@
     "short_name": "PinoyMemeDownloads",
     "id": "pinoymemesdownload",
     "description": "Collection of popular memes in the Philippines that you can use for your vlogs, comments or any Social media activities",
-    "start_url": "https://pinoymemesdownload.com/"
+    "start_url": "https://pinoymemesdownload.com/",
     "display": "fullscreen",
     "orientation": "portait"
   }
