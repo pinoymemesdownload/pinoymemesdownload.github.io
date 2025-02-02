@@ -163,7 +163,7 @@
                               </p>
                               <div class="d-flex justify-content-between align-items-center">
                                   <div class="btn-group">
-                                      <a href="${entry.download_url}" target="_blank" class="btn btn-sm btn-outline-secondary">Download</a>
+                                      <a href="${entry.download_url}" target="_blank" class="btn btn-sm btn-outline-secondary download-btn" data-tags="${tags_keywords}" data-item-id="${entry.download_url}">Download</a>
                                   </div>
                               </div><!-- dflex -->
                           </div>
@@ -187,7 +187,7 @@
                               </p>
                               <div class="d-flex justify-content-between align-items-center">
                                   <div class="btn-group">
-                                      <a href="${entry.download_url}" target="_blank" class="btn btn-sm btn-outline-secondary">Download</a>
+                                      <a href="${entry.download_url}" target="_blank" class="btn btn-sm btn-outline-secondary download-btn" data-tags="${tags_keywords}" data-item-id="${entry.download_url}">Download</a>
                                   </div>
                               </div><!-- dflex -->
                           </div>
@@ -200,7 +200,33 @@
 
       $(".card img").unveil(300);
 
+      $(".download-btn").on('click', function () {
+        var item_id = $(this).data('item-id');
+        var tags = $(this).data('tags');
 
+        if (item_id == undefined || item_id.length <= 0) {
+          console.log('invalid item_id');
+          return;
+        }
+
+        if (tags == undefined || tags.length <= 0) {
+          console.log('invalid tags');
+          return;
+        }
+
+        gtag("event", "view_item", {
+          currency: "USD",
+          value: 0.0,
+          items: [
+            {
+              item_id: item_id,
+              item_name: tags,
+              price: 0,
+              quantity: 1
+            }
+          ]
+        });
+      });
 
     });
   </script>
