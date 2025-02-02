@@ -265,12 +265,6 @@ var entries = [
     },
     {
         "type": "gif",
-        "preview_url": "https://f001.backblazeb2.com/file/pinoymemesdownload/11222023-videos/Laughing.gif",
-        "download_url": "https://f001.backblazeb2.com/file/pinoymemesdownload/11222023-images/0f78d1b82104d3fa41883db0f3df149d74543ab3e5dc84f6c4e0ffac58f51da6_1.gif",
-        "tags": ["transformers", "megatron", "masturbate"]
-    },
-    {
-        "type": "gif",
         "preview_url": "https://f001.backblazeb2.com/file/pinoymemesdownload/11222023-images/0f78d1b82104d3fa41883db0f3df149d74543ab3e5dc84f6c4e0ffac58f51da6_1.gif",
         "download_url": "https://f001.backblazeb2.com/file/pinoymemesdownload/11222023-images/0f78d1b82104d3fa41883db0f3df149d74543ab3e5dc84f6c4e0ffac58f51da6_1.gif",
         "tags": ["transformers", "megatron", "masturbate"]
