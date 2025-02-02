@@ -146,6 +146,7 @@
       $.each(entries, function (index, entry) {
 
         var tags_shtml = '';
+        var tags_keywords = entry.tags.join(",");
 
         for (i = 0; i < entry.tags.length; i++) {
           tags_shtml += '<span class="badge bg-light text-dark">' + entry.tags[i] + '</span>';
@@ -155,7 +156,7 @@
           shtml += `<div class="col">
                       <div class="card shadow-sm">
                           <img class="card-img-top" width="100%" height="225" data-src="${entry.preview_url}" src="/placeholder-image-1.webp"
-                          />
+                          alt="${tags_keywords}"/>
                           <div class="card-body">
                               <p class="card-text">
                                   ${tags_shtml}
@@ -176,7 +177,8 @@
                           height="202"
                           controlsList="nodownload noremoteplayback nofullscreen disablepictureinpicture"
                           onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;"
-                          muted="muted">
+                          muted="muted"
+                          alt="${tags_keywords}">
                             <source src="${entry.download_url}" type="video/mp4">   
                         </video>
                           <div class="card-body">
