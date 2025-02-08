@@ -178,7 +178,10 @@
                           controlsList="nodownload noremoteplayback nofullscreen disablepictureinpicture"
                           onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;"
                           muted="muted"
-                          alt="${tags_keywords}">
+                          alt="${tags_keywords}"
+                          preload = "none"
+                          poster="/video-placeholder-1280x720-40-768x433.jpg"
+                         >
                             <source src="${entry.download_url}" type="video/mp4">   
                         </video>
                           <div class="card-body">
